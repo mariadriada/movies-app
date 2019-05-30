@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { appLoad, loadMovies } from '../../actions'
+import Layout from '../Layout'
 
 class Movies extends Component{
 
@@ -11,7 +12,7 @@ class Movies extends Component{
 
     render(){
         return(
-            <div>Hello Movie!</div>
+            <Layout>Hello Movie!</Layout>
         )
     }
 }
