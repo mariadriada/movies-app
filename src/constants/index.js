@@ -7,3 +7,9 @@ export const MOVIES = {
     LOAD_SUCCESS: 'MOVIES_LOAD_SUCCESS', 
     LOAD_FAIL: 'MOVIES_LOAD_FAIL',    
 }
+
+export const DETAILS = {
+    LOAD: 'DETAILS_LOAD',
+    LOAD_SUCCESS: 'DETAILS_LOAD_SUCCESS', 
+    LOAD_FAIL: 'DETAILS_LOAD_FAIL',    
+}
