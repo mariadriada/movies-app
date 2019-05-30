@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { appLoad } from '../../actions'
+import { appLoad, loadMovies } from '../../actions'
 
 class Movies extends Component{
 
     componentDidMount(){
-        this.props.appLoad()
+        this.props.loadMovies()
     }
 
     render(){
@@ -18,7 +18,7 @@ class Movies extends Component{
 
 
 const mapDispatchToProps = dispatch => ({
-    appLoad: () => dispatch(appLoad())
+    loadMovies: () => dispatch(loadMovies())
 })
 
 export default connect(

@@ -1,10 +1,18 @@
-import { APP } from '../constants'
+import { MOVIES } from '../constants'
 
 const loadingReducer = (state = false, action) => {
-    if (action.type === APP.LOAD)
-        return state
+    
+    switch(action.type ){
+        case MOVIES.LOAD:
+            return true
+        case MOVIES.LOAD_SUCCESS:
+                return false
+        case MOVIES.LOAD_FAIL:
+            return false
 
-    return state
+        default:
+            return state
+    }   
 }
 
 export default loadingReducer
