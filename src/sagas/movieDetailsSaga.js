@@ -13,7 +13,6 @@ export function* handleMovieDetailsRequest(id){
    try {            
         yield put(loadMovieDetails(id))
         const res = yield call(fetchMovieDetails, id);
-        console.log('res', res)
         yield put(setMovieDetails(id, res))            
         return true
     }

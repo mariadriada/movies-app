@@ -12,8 +12,7 @@ export function* handleMoviesLoad(){
    yield console.log('handleMoviesLoad()')
    
     try {       
-        const movies = yield call(fetchMovies)     
-        yield console.log('Movies', movies)          
+        const movies = yield call(fetchMovies)  
         yield put(setMovies(movies))
     }
     catch(error){

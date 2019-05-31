@@ -1,5 +1,14 @@
 .layout{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border: 1px solid brown;
+    border: 1px solid #1565c0; 
+    background-color: #1565c0;  
+    
+    .title{
+        
+        h1{
+            text-align: center;
+            color: white;
+        }
+    }
 }

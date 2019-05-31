@@ -19,3 +19,8 @@ export const REVIEWS = {
     LOAD_SUCCESS: 'REVIEWS_LOAD_SUCCESS', 
     LOAD_FAIL: 'REVIEWS_LOAD_FAIL',    
 }
+
+export const FAVOURITES = {
+    ADD: 'ADD_FAVOURITE',
+    REMOVE: 'REMOVE_FAVOURITE',
+}

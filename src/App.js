@@ -4,6 +4,7 @@ import { Router,Route, Switch } from 'react-router-dom'
 
 import configureStore from './store'
 import Movies from './components/Movies'
+import MovieDetails from './components/MovieDetails'
 import history from './history'
 
 const store = configureStore()
@@ -14,7 +15,7 @@ function App() {
       <Router history = {history}>
         <Switch>
           <Route exact path='/' component={Movies} />
-          <Route exact path='/movies' component={Movies} />
+          <Route exact path='/details/:id' component={MovieDetails} />
         </Switch>
       </Router>     
     </Provider>

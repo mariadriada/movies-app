@@ -1,0 +1,31 @@
+.movie-details{
+    article {
+        color: #eeffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 18px;
+
+        section{
+            .title{
+                font-weight: 700;
+                margin-right: 5px;
+            }            
+        }
+
+        .overview{
+            .title{
+                padding: 10px 0;
+                font-size: 20px;
+            }
+        }
+    }
+    .error {
+        text-align: center;
+        color: red;
+        font-size: 18px;
+    }
+}
